@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://www.bhmpics.com/downloads/white-and-black-background-/23.white-color-smoke-black-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
 }
 
 code {

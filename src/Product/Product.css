@@ -1,0 +1,14 @@
+.product{
+    background-image: url('https://media.istockphoto.com/id/121306508/photo/a-view-of-the-baby-blue-sky-and-clouds-drifting.jpg?s=612x612&w=0&k=20&c=dhRBwGq7ONuRm340kAUeViQ9WjauTG-CPcdyTlmpJaM=');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.info{
+    background-color: rgb(175, 221, 244);
+}
+
+.image{
+    margin-top: auto;
+}

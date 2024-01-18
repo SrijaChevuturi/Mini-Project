@@ -1,24 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import { createBrowserRouter,Outlet,RouterProvider } from 'react-router-dom';
+import Product from './Product/Product';
+import Home from './Home/Home';
+import ProductList from './ProductList/ProductList';
 
 function App() {
+  let router = createBrowserRouter([
+    {
+      path: '',
+      element: <Home />,
+      children: [
+        {
+          path: '/home',
+          element:<Home/>
+        },
+        {
+          path: '/productlist',
+          element: <ProductList/>
+        },
+        {
+          path: '/product',
+          element: <Product />,
+        }
+      ]
+    },
+  ]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className='app-div'>
+      <RouterProvider router={router}/>
+      {/* <div style={{minHeight:'40vh'}}>
+      <Outlet/>
+      </div> */}
     </div>
+    
   );
 }
 

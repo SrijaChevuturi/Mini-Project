@@ -1,0 +1,15 @@
+/* .bcg{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrRLAuuJazv_Yswg9f91iAQeZSvjOwcafscg&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.title{
+    background-color: rgb(6, 18, 51);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn{
+    background-color: rgb(2, 42, 78);
+    color: whitesmoke;
+}
